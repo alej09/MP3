@@ -7,13 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.linq;
+using System.IO;
+using System.Reflection;
+using System.Xml;
+using System.Xml.Linq;
+using System.Linq;
 
 
 namespace MP3
 {
     public partial class Form1 : Form
     {
+        List<Play> listareproduci = new List<Play>();
+        List<Datos> listadatosmp3 = new List<Datos>();
+        List<Lista> listabiblio = new List<Lista>();
         public Form1()
         {
             InitializeComponent();
