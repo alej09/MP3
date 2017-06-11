@@ -63,6 +63,16 @@ namespace MP3.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _149648_opt {
+            get {
+                object obj = ResourceManager.GetObject("149648_opt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2048 {
             get {
                 object obj = ResourceManager.GetObject("2048", resourceCulture);

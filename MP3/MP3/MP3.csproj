@@ -66,11 +66,20 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Lista.cs" />
+    <Compile Include="listas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listas.Designer.cs">
+      <DependentUpon>listas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Play.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listas.resx">
+      <DependentUpon>listas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,6 +135,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cerrar-entra-cruz-en-un-boton-cuadrado_318-54077_opt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\149648_opt.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

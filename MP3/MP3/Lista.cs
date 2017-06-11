@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MP3
 {
-    class Lista
+    class Lista:Datos
     {
         string calidad;
         string url;
