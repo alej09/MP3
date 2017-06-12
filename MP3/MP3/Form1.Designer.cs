@@ -43,11 +43,13 @@
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
+            this.macTrackBar1 = new XComponent.SliderBar.MACTrackBar();
+            this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.macTrackBar1 = new XComponent.SliderBar.MACTrackBar();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -176,6 +178,39 @@
             this.label2.TabIndex = 14;
             this.label2.Text = "Listas";
             // 
+            // macTrackBar1
+            // 
+            this.macTrackBar1.BackColor = System.Drawing.Color.Transparent;
+            this.macTrackBar1.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            this.macTrackBar1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.macTrackBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(125)))), ((int)(((byte)(123)))));
+            this.macTrackBar1.IndentHeight = 6;
+            this.macTrackBar1.Location = new System.Drawing.Point(522, 83);
+            this.macTrackBar1.Maximum = 10;
+            this.macTrackBar1.Minimum = 0;
+            this.macTrackBar1.Name = "macTrackBar1";
+            this.macTrackBar1.Size = new System.Drawing.Size(271, 47);
+            this.macTrackBar1.TabIndex = 15;
+            this.macTrackBar1.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(146)))), ((int)(((byte)(148)))));
+            this.macTrackBar1.TickHeight = 4;
+            this.macTrackBar1.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(130)))), ((int)(((byte)(198)))));
+            this.macTrackBar1.TrackerSize = new System.Drawing.Size(16, 16);
+            this.macTrackBar1.TrackLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(93)))), ((int)(((byte)(90)))));
+            this.macTrackBar1.TrackLineHeight = 3;
+            this.macTrackBar1.TrackLineSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(93)))), ((int)(((byte)(90)))));
+            this.macTrackBar1.Value = 0;
+            this.macTrackBar1.ValueChanged += new XComponent.SliderBar.ValueChangedHandler(this.macTrackBar1_ValueChanged);
+            // 
+            // button9
+            // 
+            this.button9.BackgroundImage = global::MP3.Properties.Resources.todo_opt;
+            this.button9.Location = new System.Drawing.Point(545, 152);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(51, 45);
+            this.button9.TabIndex = 16;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // button8
             // 
             this.button8.BackgroundImage = global::MP3.Properties.Resources._149648_opt;
@@ -214,34 +249,22 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // macTrackBar1
+            // label3
             // 
-            this.macTrackBar1.BackColor = System.Drawing.Color.Transparent;
-            this.macTrackBar1.BorderColor = System.Drawing.SystemColors.ActiveBorder;
-            this.macTrackBar1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.macTrackBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(125)))), ((int)(((byte)(123)))));
-            this.macTrackBar1.IndentHeight = 6;
-            this.macTrackBar1.Location = new System.Drawing.Point(522, 83);
-            this.macTrackBar1.Maximum = 10;
-            this.macTrackBar1.Minimum = 0;
-            this.macTrackBar1.Name = "macTrackBar1";
-            this.macTrackBar1.Size = new System.Drawing.Size(271, 47);
-            this.macTrackBar1.TabIndex = 15;
-            this.macTrackBar1.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(146)))), ((int)(((byte)(148)))));
-            this.macTrackBar1.TickHeight = 4;
-            this.macTrackBar1.TrackerColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(130)))), ((int)(((byte)(198)))));
-            this.macTrackBar1.TrackerSize = new System.Drawing.Size(16, 16);
-            this.macTrackBar1.TrackLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(93)))), ((int)(((byte)(90)))));
-            this.macTrackBar1.TrackLineHeight = 3;
-            this.macTrackBar1.TrackLineSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(93)))), ((int)(((byte)(90)))));
-            this.macTrackBar1.Value = 0;
-            this.macTrackBar1.ValueChanged += new XComponent.SliderBar.ValueChangedHandler(this.macTrackBar1_ValueChanged);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(542, 136);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 13);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Reproducir Todo";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 492);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.macTrackBar1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button8);
@@ -292,6 +315,8 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label2;
         private XComponent.SliderBar.MACTrackBar macTrackBar1;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label3;
     }
 }
 

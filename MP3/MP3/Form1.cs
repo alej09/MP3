@@ -136,6 +136,27 @@ namespace MP3
             }
 
         }
+        public void refresh()
+        {
+            if (listareproduci.Count == 0)
+            {
+                leerxml();
+            }
+
+        }
+        public void leerxml()
+        {
+            XDocument documento = XDocument.Load(@"miXML.xml");
+            var listar = from lis in documento.Descendants("Lista_Favoritos") select lis;
+            foreach (XElement u in listar.Elements("Cancion"))
+            {
+                Play tmp = new Play();
+                tmp.Nombredecan = u.Element("Titulo").Value;
+                tmp.Direccion = u.Element("Url").Value;
+                listareproduci.Add(tmp);
+
+            }
+        }
         public void leerListas()
         {
             XDocument documento = XDocument.Load(@Listas.xml");
@@ -151,7 +172,6 @@ namespace MP3
                 tmp.Calidad = u.Element("Calidad").Value;
 
                 listabiblio.Add(tmp);
-
             }
 
         private void button7_Click(object sender, EventArgs e)
@@ -184,7 +204,7 @@ namespace MP3
             else
             {
                 listareproduci.RemoveRange(0, listareproduci.Count);
-                actualizar();
+                //refreshactualizar();
                 int max = listareproduci.Count;
                 for (int i = 0; i < listareproduci.Count; i++)
                 {
@@ -216,7 +236,30 @@ namespace MP3
         {
             player.settings.volume = macTrackBar1.Value;
         }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            macTrackBar1.Value = player.settings.volume;
+            refresh();
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+                listareproduci.RemoveRange(0, listareproduci.Count);
+                refresh();
+                var myPlayList = player.playlistCollection.newPlaylist("MyPlayList");
+
+                for (int i = 0; i < listareproduci.Count; i++)
+                {
+                    var mediaItem = player.newMedia(listareproduci[i].Direccion);
+                    myPlayList.appendItem(mediaItem);
+                }
+                player.currentPlaylist = myPlayList;
+
+            }
+        }
     }
 
-    }
-}
+
+
