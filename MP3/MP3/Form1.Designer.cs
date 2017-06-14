@@ -44,12 +44,16 @@
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.macTrackBar1 = new XComponent.SliderBar.MACTrackBar();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -73,11 +77,12 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(120, 95);
             this.listBox1.TabIndex = 2;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(63, 58);
+            this.dataGridView1.Location = new System.Drawing.Point(32, 50);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(417, 169);
             this.dataGridView1.TabIndex = 3;
@@ -100,6 +105,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -201,10 +207,57 @@
             this.macTrackBar1.Value = 0;
             this.macTrackBar1.ValueChanged += new XComponent.SliderBar.ValueChangedHandler(this.macTrackBar1_ValueChanged);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(542, 136);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 13);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Reproducir Todo";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(637, 133);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(31, 13);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Letra";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(714, 133);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 13);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Caratula";
+            // 
+            // button11
+            // 
+            this.button11.BackgroundImage = global::MP3.Properties.Resources._149092_opt;
+            this.button11.Location = new System.Drawing.Point(714, 149);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(55, 44);
+            this.button11.TabIndex = 19;
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button10
+            // 
+            this.button10.BackgroundImage = global::MP3.Properties.Resources._149345_opt;
+            this.button10.Location = new System.Drawing.Point(640, 149);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(55, 45);
+            this.button10.TabIndex = 17;
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // button9
             // 
             this.button9.BackgroundImage = global::MP3.Properties.Resources.todo_opt;
-            this.button9.Location = new System.Drawing.Point(545, 152);
+            this.button9.Location = new System.Drawing.Point(560, 152);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(51, 45);
             this.button9.TabIndex = 16;
@@ -214,7 +267,7 @@
             // button8
             // 
             this.button8.BackgroundImage = global::MP3.Properties.Resources._149648_opt;
-            this.button8.Location = new System.Drawing.Point(486, 152);
+            this.button8.Location = new System.Drawing.Point(483, 152);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(53, 45);
             this.button8.TabIndex = 13;
@@ -240,6 +293,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Minimizar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -248,21 +302,17 @@
             this.pictureBox1.Size = new System.Drawing.Size(145, 95);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(542, 136);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 13);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Reproducir Todo";
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(852, 492);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.macTrackBar1);
@@ -317,6 +367,10 @@
         private XComponent.SliderBar.MACTrackBar macTrackBar1;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label5;
     }
 }
 
