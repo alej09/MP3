@@ -311,7 +311,7 @@ namespace MP3
         {
             {
                 listBox1.Visible = true;
-                pictureBox1.Visible = false;
+                //pictureBox1.Visible = false;
                 this.listBox1.Items.Clear();
                 OpenFileDialog open = new OpenFileDialog();
                 open.Filter = "Archivo txt (*.txt)|*.txt|All(*,*)|*,*";
@@ -334,7 +334,7 @@ namespace MP3
 
         private void button11_Click(object sender, EventArgs e)
         {
-            listBox1.Visible = false;
+            //listBox1.Visible = false;
             pictureBox1.Visible = true;
         }
 

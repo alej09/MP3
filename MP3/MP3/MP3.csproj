@@ -151,6 +151,21 @@
   <ItemGroup>
     <None Include="Resources\cerrar-entra-cruz-en-un-boton-cuadrado_318-54077_opt1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21286_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\149125_002_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\149127_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\149126_opt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\149117_opt.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

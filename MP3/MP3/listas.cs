@@ -17,7 +17,7 @@ namespace MP3
     {
         Form1 frm = new Form1();
         static XmlDocument documento = new XmlDocument();
-        static string ruta = @"Listas.xml";        
+        static string ruta = @"biblio.xml";        
         List<Play> listareproduci = new List<Play>();
         List<Datos> listadatosmp3 = new List<Datos>();
         List<Lista> listabiblio = new List<Lista>();

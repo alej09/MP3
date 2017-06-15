@@ -32,11 +32,6 @@
             this.player = new AxWMPLib.AxWindowsMediaPlayer();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -51,7 +46,12 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
@@ -63,7 +63,7 @@
             // player
             // 
             this.player.Enabled = true;
-            this.player.Location = new System.Drawing.Point(714, 307);
+            this.player.Location = new System.Drawing.Point(667, 251);
             this.player.Name = "player";
             this.player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("player.OcxState")));
             this.player.Size = new System.Drawing.Size(33, 23);
@@ -73,9 +73,9 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(63, 292);
+            this.listBox1.Location = new System.Drawing.Point(63, 291);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.Size = new System.Drawing.Size(346, 173);
             this.listBox1.TabIndex = 2;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -84,59 +84,9 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(32, 50);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(417, 169);
+            this.dataGridView1.Size = new System.Drawing.Size(668, 124);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(167, 234);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Repro";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(63, 234);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Atras";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(374, 234);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "parar";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(270, 234);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "pausa";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(489, 234);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 10;
-            this.button7.Text = "Adelante";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // openFileDialog1
             // 
@@ -145,7 +95,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(414, 34);
+            this.label1.Location = new System.Drawing.Point(337, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 11;
@@ -179,7 +129,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(486, 136);
+            this.label2.Location = new System.Drawing.Point(507, 224);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 14;
@@ -192,11 +142,11 @@
             this.macTrackBar1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.macTrackBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(125)))), ((int)(((byte)(123)))));
             this.macTrackBar1.IndentHeight = 6;
-            this.macTrackBar1.Location = new System.Drawing.Point(522, 83);
+            this.macTrackBar1.Location = new System.Drawing.Point(498, 172);
             this.macTrackBar1.Maximum = 100;
             this.macTrackBar1.Minimum = 0;
             this.macTrackBar1.Name = "macTrackBar1";
-            this.macTrackBar1.Size = new System.Drawing.Size(271, 47);
+            this.macTrackBar1.Size = new System.Drawing.Size(295, 47);
             this.macTrackBar1.TabIndex = 15;
             this.macTrackBar1.TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(146)))), ((int)(((byte)(148)))));
             this.macTrackBar1.TickHeight = 4;
@@ -211,7 +161,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(542, 136);
+            this.label3.Location = new System.Drawing.Point(559, 224);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 13);
             this.label3.TabIndex = 14;
@@ -220,7 +170,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(637, 133);
+            this.label4.Location = new System.Drawing.Point(664, 224);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 18;
@@ -229,7 +179,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(714, 133);
+            this.label5.Location = new System.Drawing.Point(747, 224);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 13);
             this.label5.TabIndex = 20;
@@ -238,7 +188,7 @@
             // button11
             // 
             this.button11.BackgroundImage = global::MP3.Properties.Resources._149092_opt;
-            this.button11.Location = new System.Drawing.Point(714, 149);
+            this.button11.Location = new System.Drawing.Point(738, 240);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(55, 44);
             this.button11.TabIndex = 19;
@@ -248,7 +198,7 @@
             // button10
             // 
             this.button10.BackgroundImage = global::MP3.Properties.Resources._149345_opt;
-            this.button10.Location = new System.Drawing.Point(640, 149);
+            this.button10.Location = new System.Drawing.Point(656, 240);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(55, 45);
             this.button10.TabIndex = 17;
@@ -258,7 +208,7 @@
             // button9
             // 
             this.button9.BackgroundImage = global::MP3.Properties.Resources.todo_opt;
-            this.button9.Location = new System.Drawing.Point(560, 152);
+            this.button9.Location = new System.Drawing.Point(578, 240);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(51, 45);
             this.button9.TabIndex = 16;
@@ -268,12 +218,52 @@
             // button8
             // 
             this.button8.BackgroundImage = global::MP3.Properties.Resources._149648_opt;
-            this.button8.Location = new System.Drawing.Point(483, 152);
+            this.button8.Location = new System.Drawing.Point(498, 240);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(53, 45);
             this.button8.TabIndex = 13;
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = global::MP3.Properties.Resources._149117_opt;
+            this.button7.Location = new System.Drawing.Point(319, 205);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(51, 51);
+            this.button7.TabIndex = 10;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = global::MP3.Properties.Resources._149127_opt;
+            this.button6.Location = new System.Drawing.Point(208, 205);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(48, 51);
+            this.button6.TabIndex = 9;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::MP3.Properties.Resources._149126_opt;
+            this.button5.Location = new System.Drawing.Point(262, 205);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(51, 51);
+            this.button5.TabIndex = 8;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = global::MP3.Properties.Resources._21286_opt;
+            this.button4.Location = new System.Drawing.Point(96, 205);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(51, 51);
+            this.button4.TabIndex = 7;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -284,6 +274,16 @@
             this.button3.TabIndex = 6;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::MP3.Properties.Resources._149125_002_opt;
+            this.button2.Location = new System.Drawing.Point(153, 205);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(49, 51);
+            this.button2.TabIndex = 5;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -298,9 +298,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(200, 292);
+            this.pictureBox1.Location = new System.Drawing.Point(474, 290);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 95);
+            this.pictureBox1.Size = new System.Drawing.Size(319, 174);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);

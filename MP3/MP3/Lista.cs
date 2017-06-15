@@ -11,7 +11,18 @@ namespace MP3
         string calidad;
         string url;
         string nombre;
+        public string Nombre
+        {
+            get
+            {
+                return nombre;
+            }
 
+            set
+            {
+                nombre = value;
+            }
+        }
         public string Calidad
         {
             get
@@ -38,17 +49,6 @@ namespace MP3
             }
         }
 
-        public string Nombre
-        {
-            get
-            {
-                return nombre;
-            }
-
-            set
-            {
-                nombre = value;
-            }
-        }
+      
     }
 }

@@ -73,6 +73,46 @@ namespace MP3.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _149117_opt {
+            get {
+                object obj = ResourceManager.GetObject("149117_opt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _149125_002_opt {
+            get {
+                object obj = ResourceManager.GetObject("149125_002_opt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _149126_opt {
+            get {
+                object obj = ResourceManager.GetObject("149126_opt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _149127_opt {
+            get {
+                object obj = ResourceManager.GetObject("149127_opt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _149345_opt {
             get {
                 object obj = ResourceManager.GetObject("149345_opt", resourceCulture);
@@ -106,6 +146,16 @@ namespace MP3.Properties {
         internal static System.Drawing.Bitmap _2048_opt {
             get {
                 object obj = ResourceManager.GetObject("2048_opt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _21286_opt {
+            get {
+                object obj = ResourceManager.GetObject("21286_opt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
