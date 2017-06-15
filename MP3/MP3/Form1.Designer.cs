@@ -86,6 +86,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(417, 169);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button2
             // 
@@ -192,7 +193,7 @@
             this.macTrackBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(125)))), ((int)(((byte)(123)))));
             this.macTrackBar1.IndentHeight = 6;
             this.macTrackBar1.Location = new System.Drawing.Point(522, 83);
-            this.macTrackBar1.Maximum = 10;
+            this.macTrackBar1.Maximum = 100;
             this.macTrackBar1.Minimum = 0;
             this.macTrackBar1.Name = "macTrackBar1";
             this.macTrackBar1.Size = new System.Drawing.Size(271, 47);

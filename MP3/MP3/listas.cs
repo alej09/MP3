@@ -28,7 +28,7 @@ namespace MP3
 
         private void listas_Load(object sender, EventArgs e)
         {
-
+            dataGridView2.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace MP3
             dataGridView1.DataSource = null;
             dataGridView1.Refresh();
             dataGridView1.DataSource = listareproduci;
-            dataGridView1.Columns["url"].Visible = false;
+            dataGridView1.Columns["direccion"].Visible = false;
             dataGridView1.Refresh();
         }
         public void xml()
@@ -124,7 +124,7 @@ namespace MP3
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string nom = dataGridView1.CurrentRow.Cells["nombre"].Value.ToString();
+            string nom = dataGridView1.CurrentRow.Cells["nombredecan"].Value.ToString();
             label1.Text = nom;
         }
         public void limn(int c)
@@ -360,18 +360,18 @@ namespace MP3
             frm.Hide();
             frm.label1.Text = " ";
 
-            frm.label1.Text = dataGridView2.CurrentRow.Cells["Nombre"].Value.ToString();
-            frm.player.URL = dataGridView2.CurrentRow.Cells["Url"].Value.ToString();
+            frm.label1.Text = dataGridView2.CurrentRow.Cells["nombre"].Value.ToString();
+            frm.player.URL = dataGridView2.CurrentRow.Cells["url"].Value.ToString();
 
             WMPLib.IWMPPlaylist playlist = frm.player.playlistCollection.newPlaylist("myplaylist");
             WMPLib.IWMPMedia media;
 
-            media = frm.player.newMedia(dataGridView2.CurrentRow.Cells["Url"].Value.ToString());
+            media = frm.player.newMedia(dataGridView2.CurrentRow.Cells["url"].Value.ToString());
             playlist.appendItem(media);
 
             frm.player.currentPlaylist = playlist;
             listadatosmp3.RemoveRange(0, listadatosmp3.Count);
-            string dat = dataGridView2.CurrentRow.Cells["Url"].Value.ToString();
+            string dat = dataGridView2.CurrentRow.Cells["url"].Value.ToString();
             cargarima(dat);
             tagcan(dat);
             frm.dataGridView1.DataSource = null;
@@ -418,6 +418,32 @@ namespace MP3
             listareproduci.Add(reprotemp);
             cargar();
             xml();
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            frm.Hide();
+            frm.label1.Text = " ";
+
+            frm.label1.Text = dataGridView1.CurrentRow.Cells["nombredecan"].Value.ToString();
+            frm.player.URL = dataGridView1.CurrentRow.Cells["direccion"].Value.ToString();
+
+            WMPLib.IWMPPlaylist playlist = frm.player.playlistCollection.newPlaylist("myplaylist");
+            WMPLib.IWMPMedia media;
+
+            media = frm.player.newMedia(dataGridView1.CurrentRow.Cells["direccion"].Value.ToString());
+            playlist.appendItem(media);
+
+            frm.player.currentPlaylist = playlist;
+            listadatosmp3.RemoveRange(0, listadatosmp3.Count);
+            string dat = dataGridView1.CurrentRow.Cells["direccion"].Value.ToString();
+            cargarima(dat);
+            tagcan(dat);
+            frm.dataGridView1.DataSource = null;
+            frm.dataGridView1.Refresh();
+            frm.dataGridView1.DataSource = listadatosmp3;
+            frm.dataGridView1.Refresh();
+            frm.Show();
         }
 
         private void button7_Click(object sender, EventArgs e)
