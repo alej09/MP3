@@ -121,8 +121,8 @@
   <data name="todo_opt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\todo_opt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cerrar-entra-cruz-en-un-boton-cuadrado_318-54077_opt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cerrar-entra-cruz-en-un-boton-cuadrado_318-54077_opt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="149092_opt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\149092_opt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="149648_opt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\149648_opt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,16 +130,19 @@
   <data name="149345_opt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\149345_opt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="2048_opt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2048_opt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="2048" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2048.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2048_opt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2048_opt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cerrar-entra-cruz-en-un-boton-cuadrado_318-54077_opt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cerrar-entra-cruz-en-un-boton-cuadrado_318-54077_opt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="índice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\índice.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="149092_opt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\149092_opt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cerrar-entra-cruz-en-un-boton-cuadrado_318-54077_opt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cerrar-entra-cruz-en-un-boton-cuadrado_318-54077_opt1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

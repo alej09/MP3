@@ -123,6 +123,16 @@ namespace MP3.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cerrar_entra_cruz_en_un_boton_cuadrado_318_54077_opt1 {
+            get {
+                object obj = ResourceManager.GetObject("cerrar-entra-cruz-en-un-boton-cuadrado_318-54077_opt1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap índice {
             get {
                 object obj = ResourceManager.GetObject("índice", resourceCulture);

@@ -103,7 +103,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 7;
-            this.button4.Text = "button4";
+            this.button4.Text = "Atras";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -345,11 +345,7 @@
         }
 
         #endregion
-
-        private AxWMPLib.AxWindowsMediaPlayer player;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -358,7 +354,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
@@ -371,6 +366,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label5;
+        public AxWMPLib.AxWindowsMediaPlayer player;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Label label1;
     }
 }
 
